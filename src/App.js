@@ -11,10 +11,10 @@ const App = props => {
   return (
     <Router>
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           Logged Out
         </Route>
-        <Route path='/:slug'>
+        <Route exact path='/:slug'>
           <ReviewCard />
         </Route>
       </Switch>
